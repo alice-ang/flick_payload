@@ -2,7 +2,6 @@ import { CollectionConfig } from "payload/types";
 
 const Offers: CollectionConfig = {
   slug: "offers",
-
   admin: {
     useAsTitle: "title",
   },

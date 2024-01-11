@@ -2,7 +2,9 @@ import { CollectionConfig } from "payload/types";
 
 const Challenges: CollectionConfig = {
   slug: "challenges",
-
+  access: {
+    read: () => true,
+  },
   admin: {
     useAsTitle: "title",
   },

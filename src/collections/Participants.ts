@@ -2,9 +2,8 @@ import { CollectionConfig } from "payload/types";
 
 const Participants: CollectionConfig = {
   slug: "participants",
-
   admin: {
-    useAsTitle: "email",
+    useAsTitle: "userId",
   },
   fields: [
     {
@@ -17,10 +16,9 @@ const Participants: CollectionConfig = {
       name: "email", // required
       type: "email", // required
       label: "Participant email",
-      required: true,
     },
     {
-      name: "joinedDate",
+      name: "joinedAt",
       type: "date",
       admin: {
         date: {
